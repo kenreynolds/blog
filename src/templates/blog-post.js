@@ -6,10 +6,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
+import { DiscussionEmbed } from "disqus-react"
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const disqusShortname = 'ken-reynolds-photography'
+  const disqusConfig = {
+    identifier: post.id,
+    title: post.frontmatter.title
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -38,6 +45,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+
         <hr
           style={{
             marginBottom: rhythm(1),
