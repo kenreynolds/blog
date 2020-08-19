@@ -1,10 +1,11 @@
 ---
 title: Spider Lightning!
 date: "2020-08-04T22:49:55+00:00"
+image: "../../assets/images/spider-lightning.jpg"
 description: Spider lightning over Grand Prairie, TX
 ---
 
-![Spider lightning](./spider-lightning.jpg)
+![Spider lightning](../../assets/images/spider-lightning.jpg)
 > An impressive display of spider lightning stretches across the sky over Grand Prairie, TX.
 
 This is an older image that I captured way back on June 12, 2009 as severe thunderstorms moved through the D/FW Metroplex from the west. According to [this lightning entry on Wikipedia](https://en.wikipedia.org/wiki/Lightning), spider lightning is an observational variation of anvil crawler lightning and "is created when leaders propagate through horizontally-extensive charge regions in mature thunderstorms. These discharges usually begin as intracloud discharges originating within the convective region; the negative leader end then propagates well into the aforementioned charge regions in the stratiform area. If the leader becomes too long, it may separate into multiple bidirectional leaders. When this happens, the positive end of the separated leader may strike the ground as a positive CG flash or crawl on the underside of the cloud, creating a spectacular display of lightning crawling across the sky." The most impressive anvil crawler display that I have ever witnessed was in the year 2001, during the late spring, over the D/FW Metroplex. That display was unlike anything that I had ever witnessed before and lasted for several hours on the trailing edge of a complex of tornadic thunderstorms that rumbled across the area.
