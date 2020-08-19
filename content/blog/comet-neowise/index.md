@@ -1,10 +1,11 @@
 ---
 title: Comet NEOWISE
 date: "2020-07-25T22:47:20+00:00"
+image: "../../assets/images/comet-neowise.jpg"
 description: Comet NEOWISE, as seen west of Throckmorton, TX
 ---
 
-![Comet Neowise](./comet-neowise.jpg)
+![Comet Neowise](../../assets/images/comet-neowise.jpg)
 > Comet NEOWISE, as seen from the Bridle Bit Bull statue, located 10 miles west of Throckmorton, TX on Highway 380.
 
 Last weekend I took full advantage of the opportunity to embark on a short road trip to Throckmorton, TX, located about 3 hours west of the Dallas/Fort Worth Metroplex, in order to see and photograph Comet NEOWISE. For anyone who loves viewing the night sky in all of its stardust glory this area, occupying a small footprint in Northwest Texas, is one of the best places to do so. The only light pollution around is from the nearby wind farm and, as you can see in the photo, it is minimal at best. By an hour after sunset I was able to clearly see the comet, as well as the Milky Way galaxy and a sky littered with bright stars, galaxies, and planets (something that is just not possible in the ridiculously light-polluted skies of the Metroplex).
