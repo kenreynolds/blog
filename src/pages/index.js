@@ -31,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
               <small>{node.frontmatter.date}</small>
             </header>
             <section>
-              <img src={node.frontmatter.image.childImageSharp.resolutions.src} />
+              <img src={node.frontmatter.image.childImageSharp.fluid.src} />
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -68,7 +68,7 @@ export const pageQuery = graphql`
               id
               childImageSharp {
                 id
-                resolutions {
+                fluid(maxWidth: 585) {
                   src
                 }
               }
