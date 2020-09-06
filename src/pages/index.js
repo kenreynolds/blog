@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -13,23 +12,48 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+          <article
+            style={{
+              backgroundColor: `#fff`,
+              borderRadius: `4px`,
+              marginBottom: `1rem`,
+              padding: `1rem`,
+            }}
+            key={node.fields.slug}
+          >
+            <header style={{
+              alignItems: `flex-end`,
+              color: `#37474F`,
+              display: `flex`,
+              justifyContent: `space-between`,
+              marginBottom: `1rem`,
+            }}>
+              <h3 style={{
+                fontSize: `1.5rem`,
+                marginBottom: rhythm(1 / 4),
+              }}>
+                <Link
+                  style={{
+                    boxShadow: `none`,
+                    color: `#37474F`,
+                  }}
+                  to={node.fields.slug}
+                >
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small style={{
+                color: `#37474F`,
+                fontSize: `1rem`,
+                marginBottom: `5px`,
+              }}>
+                {node.frontmatter.date}
+              </small>
             </header>
+
             <section>
               <img src={node.frontmatter.image.childImageSharp.fluid.src} />
               <p
@@ -68,7 +92,7 @@ export const pageQuery = graphql`
               id
               childImageSharp {
                 id
-                fluid(maxWidth: 585) {
+                fluid(maxWidth: 720) {
                   src
                 }
               }

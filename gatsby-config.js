@@ -3,7 +3,7 @@ module.exports = {
     title: `Ken Reynolds Photography`,
     author: {
       name: `Ken`,
-      summary: `lives and works in Dallas, TX and is constantly searching for adventure in uncivilized places.`,
+      summary: `Ken lives and works in Dallas, TX. He chases storms, landscapes, and cool urban scenes across North America. He is always looking for adventure in uncivilized places.`,
     },
     description: `Chasing storms, landscapes, and urban scenes.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
