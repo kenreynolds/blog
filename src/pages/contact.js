@@ -34,12 +34,12 @@ export default function Contact() {
         >
           <div className="col">
             <label htmlFor="inputFirstName">First name</label>
-            <input className="form-control" type="text" />
+            <input className="form-control" name="firstname" type="text" />
           </div>
 
           <div className="col">
             <label htmlFor="inputLastName">Last name</label>
-            <input className="form-control" type="text" />
+            <input className="form-control" name="lastname" type="text" />
           </div>
         </div>
 
@@ -51,7 +51,7 @@ export default function Contact() {
         >
           <div className="col">
             <label htmlFor="inputEmail">Email address</label>
-            <input className="form-control" type="email" />
+            <input className="form-control" name="email" type="email" />
           </div>
         </div>
 
