@@ -3,7 +3,7 @@ module.exports = {
     title: `Ken Reynolds Photography`,
     author: {
       name: `Ken`,
-      summary: `lives and works in Dallas, TX and is constantly searching for adventure in uncivilized places.`,
+      summary: `Ken lives and works in Dallas, TX. He chases storms, landscapes, and cool urban scenes across North America. He is always looking for adventure in uncivilized places.`,
     },
     description: `Chasing storms, landscapes, and urban scenes.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 720,
             },
           },
           {
@@ -76,6 +76,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-fontawesome-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
