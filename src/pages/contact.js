@@ -58,7 +58,7 @@ export default function Contact() {
         <div className="row">
           <div className="col">
             <label htmlFor="inputMessage">Message</label>
-            <textarea className="form-control" rows="4"></textarea>
+            <textarea className="form-control" name="message" rows="4"></textarea>
           </div>
         </div>
 
