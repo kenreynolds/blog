@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -24,11 +23,23 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
-        <header>
+      <article style={{
+        backgroundColor: `#fff`,
+        borderRadius: `4px`,
+        marginBottom: `1rem`,
+        padding: `1rem`,
+      }}>
+        <header style={{
+          alignItems: `flex-end`,
+          display: `flex`,
+          justifyContent: `space-between`,
+          marginBottom: `1rem`,
+        }}>
           <h1
             style={{
-              marginTop: rhythm(1),
+              border: `none`,
+              color: `#37474F`,
+              fontSize: `1.5rem`,
               marginBottom: 0,
             }}
           >
@@ -36,26 +47,19 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </h1>
           <p
             style={{
-              ...scale(-1 / 5),
+              color: `#37474F`,
               display: `block`,
-              marginBottom: rhythm(1),
+              fontSize: `1rem`,
+              marginBottom: `5px`,
             }}
           >
             {post.frontmatter.date}
           </p>
         </header>
+
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <footer>
-          <Bio />
-        </footer>
       </article>
 
       <nav>
@@ -65,6 +69,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
+            marginLeft: 0,
             padding: 0,
           }}
         >

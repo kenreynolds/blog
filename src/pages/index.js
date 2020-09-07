@@ -61,6 +61,16 @@ const BlogIndex = ({ data, location }) => {
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
+              <span>
+                <Link
+                  style={{
+                    boxShadow: `none`,
+                  }}
+                  to={node.fields.slug}
+                >
+                  Read more...
+                </Link>
+              </span>
             </section>
           </article>
         )

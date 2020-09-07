@@ -32,15 +32,10 @@ const Bio = () => {
         backgroundColor: `#fff`,
         borderRadius: `4px`,
         marginBottom: rhythm(2.5),
-        padding: `8px`,
+        padding: `1rem`,
       }}
     >
-      <div
-        className="row"
-        style={{
-          marginTop: `.5rem`,
-        }}
-      >
+      <div className="row">
         <div className="col-md-12">
           <h3 style={{
             color: `#37474F`,
@@ -68,7 +63,7 @@ const Bio = () => {
 
         <div className="col-md-6">
           <p>
-            When not chasing light, Ken is probably slinging code as a Sr. Front-end Developer in the airline industry, listening to some awesome synthwave tunes, watching the latest Marvel flick, or spending time with his beautiful wife and daughter. He is easily bribed with pizza and killer craft beer.
+            When not chasing light, Ken is probably slinging code as a Sr. Front-end Developer in the airline industry, listening to music, playing ham radio, or spending time with his beautiful wife and daughter. He is easily bribed with pizza and killer craft beer.
           </p>
         </div>
       </div>

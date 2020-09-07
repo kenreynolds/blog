@@ -3,8 +3,16 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
-import Bio from "../components/bio";
 import logo from "../../content/assets/logo.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faFacebookSquare,
+  faInstagram,
+  faPinterestSquare,
+  faTwitterSquare
+} from "@fortawesome/free-brands-svg-icons"
+
+import Bio from "../components/bio";
 
 const Layout = ({ children }) => {
   let header
@@ -32,8 +40,7 @@ const Layout = ({ children }) => {
               }}
             >
               <li className="nav-item active">
-                <a
-                  href="#"
+                <Link to={`/`}
                   className="nav-link"
                   style={{
                     color: `#FFFFFF`,
@@ -41,17 +48,82 @@ const Layout = ({ children }) => {
                   }}
                 >
                   Home <span className="sr-only">(current)</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
-                  href="#"
+                <Link to={`/`}
                   className="nav-link"
                   style={{
                     color: `#FFFFFF`,
                   }}
                 >
                   Contact
+                </Link>
+              </li>
+            </ul>
+
+            <ul style={{
+              alignItems: `center`,
+              display: `flex`,
+              listStyle: `none`,
+              marginBottom: 0,
+            }}>
+              <li style={{
+                fontSize: `24px`,
+                marginBottom: 0,
+              }}>
+                <a href="https://www.facebook.com/kenreynoldsphoto"
+                  target="_blank"
+                  style={{
+                    color: `#fff`,
+                  }}
+                >
+                  <FontAwesomeIcon icon={faFacebookSquare} />
+                </a>
+              </li>
+              <li style={{
+                color: `#fff`,
+                fontSize: `24px`,
+                marginBottom: 0,
+                marginLeft: `1.5rem`,
+              }}>
+                <a href="https://www.instagram.com/kenreynoldsphotography/"
+                  target="_blank"
+                  style={{
+                    color: `#fff`,
+                  }}
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </li>
+              <li style={{
+                color: `#fff`,
+                fontSize: `24px`,
+                marginBottom: 0,
+                marginLeft: `1.5rem`,
+              }}>
+                <a href="https://www.pinterest.com/kenreynoldsphotography"
+                  target="_blank"
+                  style={{
+                    color: `#fff`,
+                  }}
+                >
+                  <FontAwesomeIcon icon={faPinterestSquare} />
+                </a>
+              </li>
+              <li style={{
+                color: `#fff`,
+                fontSize: `24px`,
+                marginBottom: 0,
+                marginLeft: `1.5rem`,
+              }}>
+                <a href="https://twitter.com/kennethreynolds"
+                  target="_blank"
+                  style={{
+                    color: `#fff`,
+                  }}
+                >
+                  <FontAwesomeIcon icon={faTwitterSquare} />
                 </a>
               </li>
             </ul>
