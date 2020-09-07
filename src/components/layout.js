@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={`/`}
+                <Link to={`/contact`}
                   className="nav-link"
                   style={{
                     color: `#FFFFFF`,
@@ -142,7 +142,9 @@ const Layout = ({ children }) => {
           </div>
         </div>
 
-        <footer>
+        <footer style={{
+          marginTop: `2rem`,
+        }}>
           © {new Date().getFullYear()} Ken Reynolds Photography
         </footer>
       </div>
