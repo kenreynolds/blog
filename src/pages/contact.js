@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <Layout>
       <form
-        action="/pages/success"
+        action="/src/pages/success"
         name="contact"
         method="post"
         data-netlify="true"
