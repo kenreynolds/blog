@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -35,15 +35,26 @@ const Bio = () => {
         padding: `1rem`,
       }}
     >
-      <div className="row">
-        <div className="col-md-12">
-          <h3 style={{
-            color: `#37474F`,
-            fontSize: `1.5rem`,
-            marginBottom: `1.5rem`,
-          }}>
-            About {author.name}
-          </h3>
+      <div
+        className="row"
+        style={{
+          alignItems: `center`,
+          justifyContent: `space-between`,
+          paddingLeft: `1rem`,
+          paddingRight: `1rem`,
+        }}
+      >
+        <h3 style={{
+          color: `#37474F`,
+          fontSize: `1.5rem`,
+          marginBottom: `1.5rem`,
+        }}>
+          About {author.name}
+        </h3>
+        <div style={{
+          paddingBottom: `1rem`,
+        }}>
+          <Link to={`/contact`}>Contact Ken</Link>
         </div>
       </div>
 
